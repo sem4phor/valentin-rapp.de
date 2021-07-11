@@ -6,12 +6,12 @@
       <timeline timeline-theme="lightsteelblue">
         <timeline-title font-color="white" class="font-bold font-serif">Now!</timeline-title>
         <timeline-item font-color="white" :hollow="true">
-          Software Engeneer @
+          Software Engineer @
           <a href="http://www.sva.de" target="_blank">SVA GmbH</a>
         </timeline-item>
         <timeline-title font-color="white" class="font-bold font-serif">2020</timeline-title>
         <timeline-item font-color="white" :hollow="true">
-          Frontend Engeneer @
+          Frontend Engineer @
           <a href="http://www.zweischneider.de" target="_blank">Zweischneider GmbH</a>
         </timeline-item>
         <timeline-title font-color="white" class="font-bold font-serif">2017</timeline-title>

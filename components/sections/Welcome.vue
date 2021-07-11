@@ -31,7 +31,7 @@
           <vue-typer
             class="text-orange font-serif md:hidden"
             :text="[
-              'Hello! I am a Software Engeneer from Germany. My speciality and passion is frontend development.',
+              'Hello! I am a Software Engineer from Germany. My speciality and passion is frontend development.',
               'My speciality and passion is frontend development.',
             ]"
             :repeat="0"
@@ -40,7 +40,7 @@
           <vue-typer
             class="text-orange font-serif hidden md:block"
             :text="[
-              'Hello! I am a Software Engeneer from Germany. My speciality and passion is frontend development and everything regarding javascript. But I am as well interested in the software development process as a whole.',
+              'Hello! I am a Software Engineer from Germany. My speciality and passion is frontend development and everything regarding javascript. But I am as well interested in the software development process as a whole.',
             ]"
             :repeat="0"
             erase-style="clear"

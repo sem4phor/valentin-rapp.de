@@ -14,7 +14,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Hello! I am Valentin, a Software Engeneer from Germany.'
+        content: 'Hello! I am Valentin, a Software Engineer from Germany.'
       },
     ],
     script: [{
