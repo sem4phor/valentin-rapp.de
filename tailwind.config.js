@@ -21,11 +21,12 @@ module.exports = {
     colors: {
       primary: '#1e2643',
       secondary: '#b07c0c',
-      white: 'white',
+      white: 'whitesmoke',
       black: 'black',
     },
     textColor: theme => ({
       blue: 'lightsteelblue',
+      white: theme('colors').white,
       orange: theme('colors').secondary
     }),
     fontFamily: {

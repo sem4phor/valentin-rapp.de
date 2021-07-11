@@ -11,9 +11,12 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Hello! I am Valentin, a Software Engeneer from Germany.'
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [{
       src: 'https://www.goat1000.com/tagcanvas.min.js', charset: 'utf-8'
     }]
@@ -27,7 +30,6 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '~/plugins/pageable.client.js',
     '~/plugins/vue-typer.client.js',
   ],
 
@@ -51,11 +53,6 @@ export default {
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
-
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-    transpile: ['pageable']
-  },
   googleFonts: {
     families: {
       'Fira Code': true,

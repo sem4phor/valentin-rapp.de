@@ -1,17 +1,23 @@
 <template>
-  <section>
+  <section class="flex flex-col justify-center lg:max-w-6xl">
     <!-- eslint-disable -->
-    <h1 class="text-4xl font-bold mb-4">Curriculum Vitae</h1>
+    <h1>CV</h1>
     <timeline timeline-theme="lightsteelblue">
-      <timeline-title font-color="white">Now!</timeline-title>
-      <timeline-item font-color="white" :hollow="true">Software Engeneer @ SVA GmbH</timeline-item>
-      <timeline-title font-color="white">2020</timeline-title>
-      <timeline-item font-color="white" :hollow="true">Frontend Engeneer @ Zweischneider GmbH</timeline-item>
-      <timeline-title font-color="white">2017</timeline-title>
+      <timeline-title font-color="white" class="font-bold font-serif">Now!</timeline-title>
+      <timeline-item font-color="white" :hollow="true">
+        Software Engeneer @
+        <a href="http://www.sva.de" target="_blank">SVA GmbH</a>
+      </timeline-item>
+      <timeline-title font-color="white" class="font-bold font-serif">2020</timeline-title>
+      <timeline-item font-color="white" :hollow="true">
+        Frontend Engeneer @
+        <a href="http://www.zweischneider.de" target="_blank">Zweischneider GmbH</a>
+      </timeline-item>
+      <timeline-title font-color="white" class="font-bold font-serif">2017</timeline-title>
       <timeline-item font-color="white" :hollow="true">
         Angewandte Informatik B. Sc (Applied Computer Science) @ Hochschule Rhein-Main, Wiesbaden
       </timeline-item>
-      <timeline-title font-color="white">2012</timeline-title>
+      <timeline-title font-color="white" class="font-bold font-serif">2012</timeline-title>
     </timeline>
   </section>
 </template>

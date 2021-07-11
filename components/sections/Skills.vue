@@ -2,18 +2,19 @@
   <!-- eslint-disable -->
   <section class="flex flex-col lg:flex-row-reverse items-center justify-center">
     <div class="max-w-xl nm-concave-primary p-8 rounded-lg">
-      <h1 class="text-4xl font-bold mb-4">Skills</h1>
-      <p>
+      <h1>Skills</h1>
+      <p class="mb-2">
         In my four years working as a software developer I learned about many
         technologies, methods and principles especially in the javascript world.
+        To highlight some of them:
+      </p>
+      <p class="text-orange font-serif">
+        Vue, JAM Stack, UX, Scrum, TailwindCSS, Git, GraphQL, AWS, CSS, React, Nuxt,
+        Typescript, NodeJS, CI/CD
       </p>
     </div>
     <div id="myCanvasContainer" class="my-auto lg:mr-20">
-      <canvas width="500" height="500" id="myCanvas" style="width: 100%">
-        <p>
-          Anything in here will be replaced on browsers that support the canvas
-          element
-        </p>
+      <canvas width="750" height="750" id="myCanvas" style="width: 100%">
         <ul>
           <li>
             <a @click.prevent title="JAMstack">
@@ -97,7 +98,8 @@ export default {
         tooltipDelay: '150',
         clickToFront: 500,
         initial: [0.2, -0.2],
-        wheelZoom: false
+        wheelZoom: false,
+        imageMode: 'both',
       });
       /* eslint-enable */
     } catch (e) {

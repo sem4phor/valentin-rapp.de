@@ -1,10 +1,10 @@
 <template>
   <section
-    class="flex flex-col lg:flex-row-reverse items-center justify-evenly relative"
+    class="flex flex-col lg:flex-row-reverse items-center justify-evenly"
   >
     <!-- name + img -->
     <div>
-      <h2 class="w-full text-center text-2xl flex items-center justify-center">
+      <h2 class="w-full text-center flex items-center justify-center">
         Valentin Rapp
       </h2>
       <div
@@ -17,9 +17,9 @@
     </div>
     <div class="w-full max-w-3xl flex flex-col items-center">
       <!-- welcome + console -->
-      <div class="w-full mb-8">
-        <div class="text-4xl font-bold mb-4">Welcome</div>
-        <div class="w-full md:max-w-xl lg:max-w-2xl nm-convex-black h-32 p-4">
+      <div class="mb-8 flex flex-col items-center w-full lg:mr-12">
+        <h1 class="self-start md:ml-20 lg:ml-0">Welcome</h1>
+        <div class="w-full nm-convex-black h-32 p-4">
           <vue-typer
             class="text-orange font-serif md:hidden"
             :text="[
@@ -45,8 +45,15 @@
           text="LinkedIn"
           :icon="LinkedInLogo"
           class="mb-4 lg:mb-0 lg:mr-4"
+          href="https://www.linkedin.com/in/valentin-rapp-588922188/"
+          target="_blank"
         />
-        <ExpandableButton text="Github" :icon="GithubLogo" />
+        <ExpandableButton
+          href="https://github.com/sem4phor"
+          target="_blank"
+          text="Github"
+          :icon="GithubLogo"
+        />
       </div>
     </div>
   </section>
@@ -56,7 +63,7 @@
 import LinkedInLogo from 'vue-ionicons/dist/logo-linkedin.vue';
 import GithubLogo from 'vue-ionicons/dist/logo-github.vue';
 
-// aurora effekt oder neumorphism elemente bei desktop
+// TODO: aurora effekt oder neumorphism elemente bei desktop
 export default {
   name: 'WelcomeSection',
   created() {

@@ -1,6 +1,7 @@
 <template>
   <button
     class="nm-convex-primary rounded-full btn fixed bottom-0 right-0 m-4 flex"
+    @click="scrollToTop"
   >
     <ArrowIcon w="40" h="40" />
   </button>
@@ -14,11 +15,16 @@ export default {
   components: {
     ArrowIcon,
   },
+  methods: {
+    scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    },
+  },
 };
 </script>
 
 <style scoped>
-.btn {
-  /* right: 0; */
+.btn:focus {
+  outline: none;
 }
 </style>
