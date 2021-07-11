@@ -9,6 +9,14 @@
       </h2>
       <div
         class="nm-concave-primary w-40 h-40 sm:w-52 sm:h-52 lg:w-80 lg:h-80 rounded-full flex justify-center items-center mt-4"
+        v-anime="{
+          opacity: [0, 1],
+          scale: [0, 1],
+          loop: false,
+          easing: 'easeInOutQuad',
+          duration: 500,
+          delay: 1000,
+        }"
       >
         <div
           class="img nm-inset-primary w-32 h-32 sm:w-40 sm:h-40 lg:w-72 lg:h-72 rounded-full"
