@@ -16,7 +16,7 @@
         </timeline-item>
         <timeline-title font-color="white" class="font-bold font-serif">2017</timeline-title>
         <timeline-item font-color="white" :hollow="true">
-          Angewandte Informatik B. Sc (Applied Computer Science) @ Hochschule Rhein-Main, Wiesbaden
+          Angewandte Informatik B.Sc. (Applied Computer Science) @ Hochschule Rhein-Main, Wiesbaden
         </timeline-item>
         <timeline-title font-color="white" class="font-bold font-serif">2012</timeline-title>
       </timeline>
@@ -30,6 +30,7 @@ import IntersectionObserver from 'vue-intersection-observer';
 
 export default {
   name: 'CvSection',
+  ssr: false,
   components: {
     Timeline,
     TimelineItem,

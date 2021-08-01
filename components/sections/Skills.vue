@@ -90,6 +90,7 @@
 <script>
 export default {
   name: 'SkillsSection',
+  ssr: false,
   mounted() {
     try {
       /* eslint-disable */

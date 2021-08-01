@@ -74,6 +74,7 @@ import GithubLogo from 'vue-ionicons/dist/logo-github.vue';
 // TODO: aurora effekt oder neumorphism elemente bei desktop
 export default {
   name: 'WelcomeSection',
+  ssr: false,
   created() {
     this.LinkedInLogo = LinkedInLogo;
     this.GithubLogo = GithubLogo;
