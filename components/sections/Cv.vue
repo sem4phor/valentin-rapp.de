@@ -7,7 +7,12 @@
         <timeline-title font-color="white" class="font-bold font-serif">Now!</timeline-title>
         <timeline-item font-color="white" :hollow="true">
           Software Engineer @
-          <a href="http://www.sva.de" target="_blank">SVA GmbH</a>
+          <a href="https://www.justtrade.com" target="_blank">justTRADE GmbH</a>
+        </timeline-item>
+        <timeline-title font-color="white" class="font-bold font-serif">2021</timeline-title>
+        <timeline-item font-color="white" :hollow="true">
+          Software Engineer @
+          <a href="https://www.sva.de" target="_blank">SVA GmbH</a>
         </timeline-item>
         <timeline-title font-color="white" class="font-bold font-serif">2020</timeline-title>
         <timeline-item font-color="white" :hollow="true">
