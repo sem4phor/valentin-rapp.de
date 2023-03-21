@@ -8,7 +8,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import CallToAction from '../components/CallToAction.astro';
 import Grid from '../components/Grid.astro';
 import Hero from '../components/Hero.astro';
-import Icon from '../components/Icon.astro';
+import { Icon } from 'astro-icon'
 import Pill from '../components/Pill.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
 
@@ -35,9 +35,9 @@ const projects = (await getCollection('work'))
 					align="start"
 				>
 					<div class="roles">
-						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-						<Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill>
-						<Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
+						<Pill><Icon name="ion:code-slash-outline" size="1.33em" /> Developer</Pill>
+						<Pill><Icon name="ion:person-circle-outline" size="1.33em" /> UX Advocate</Pill>
+						<Pill><Icon name="ion:refresh-outline" size="1.33em" /> Agile Enthusiast</Pill>
 					</div>
 				</Hero>
 
@@ -74,30 +74,8 @@ const projects = (await getCollection('work'))
 				<div class="cta">
 					<CallToAction href="/work/">
 						View All
-						<Icon icon="arrow-right" size="1.2em" />
+						<Icon name="ion:arrow-forward-outline" size="1.2em" />
 					</CallToAction>
-				</div>
-			</section>
-
-			<section class="section with-background bg-variant">
-				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mentions</h3>
-					<p>
-						I have been fortunate enough to recieve praise for my work in several publications. Take
-						a look below to learn more.
-					</p>
-				</header>
-
-				<div class="gallery">
-					<Grid variant="small">
-						{
-							['Medium', 'BuzzFeed', 'The Next Web', 'awwwards.', 'TechCrunch'].map((brand) => (
-								<li class="mention-card">
-									<p>{brand}</p>
-								</li>
-							))
-						}
-					</Grid>
 				</div>
 			</section>
 		</main>
@@ -144,6 +122,8 @@ const projects = (await getCollection('work'))
 			aspect-ratio: 3 / 4;
 			border-radius: 4.5rem;
 			object-fit: cover;
+			background-color: rgba(255, 255, 255, .15);  
+ 			backdrop-filter: blur(5px);
 		}
 	}
 
