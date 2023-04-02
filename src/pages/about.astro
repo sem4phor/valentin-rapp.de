@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
+import Pill from '../components/Pill.astro';
 ---
 
 <BaseLayout title="About | Valentin Rapp" description="About Valentin Rapp Lorem Ipsum">
@@ -24,35 +25,40 @@ import Hero from '../components/Hero.astro';
 				<h2 class="section-title">Background</h2>
 				<div class="content">
 					<p>
-						Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy.
-						Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum
-						id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla
-						pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
+						Hi there! My name is Valentin and I'm a computer science graduate with a specialization in software engineering. My passion for the natural sciences during school led me to explore the world of coding and software development, and I've been hooked ever since, being in the industry for about five years to this day.
 					</p>
 					<p>
-						Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis
-						natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl
-						condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel
-						quam elementum pulvinar etiam non.
+						I began my career in a software development agency, where I honed my skills in software engineering concepts with a heavy focus on frontend development. Working alongside UI/UX designers, backend developers, and product owners, I helped create a range of digital products.
 					</p>
 					<p>
-						Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet
-						eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra.
-						Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl
-						pretium fusce.
+						Later, I joined a larger company, where I had the opportunity to work on a variety of customer projects. I continued my journey as a frontend developer, improving my engineering skills and working in agile teams.
+					</p>
+					<p>
+						Recently, I made the decision to focus on a single product and dive deeper into creating a product, learning about all its facets. This has been an incredibly exciting journey, and I'm thrilled to continue expanding my knowledge and expertise as a leader of a squad of skilled developers.
+					</p>
+					<p>
+						I'm passionate about all things related to product development and love working on projects that challenge me to learn and grow. When I'm not coding, you can find me in the gym, reading, or trying out new recipes in the kitchen. Feel free to get in touch with me anytime!
 					</p>
 				</div>
 			</section>
 			<section>
 				<h2 class="section-title">Education</h2>
 				<div class="content">
-					<p>Corporis voluptates tenetur laudantium.</p>
+					<p>Bachelor of Applied Science // Computer Science</p>
 				</div>
 			</section>
 			<section>
 				<h2 class="section-title">Skills</h2>
-				<div class="content">
-					<p>officia unde omnis</p>
+				<div class="content pills">
+					<Pill>Javascript / Typescript</Pill>
+					<Pill>NodeJS / NestJS</Pill>
+					<Pill>Frontend Development</Pill>
+					<Pill>AWS</Pill>
+					<Pill>Mobile development</Pill>
+					<Pill>Leadership</Pill>
+					<Pill>Vue / React</Pill>
+					<Pill>Testing</Pill>
+					<Pill>Agilile Methodologies</Pill>
 				</div>
 			</section>
 		</main>
@@ -66,6 +72,13 @@ import Hero from '../components/Hero.astro';
 		display: flex;
 		flex-direction: column;
 		gap: 3.5rem;
+	}
+
+	.pills {
+		display: flex;
+		flex-wrap: wrap;
+		grid-row-gap: 8px;
+		grid-column-gap: 8px;
 	}
 
 	img {
