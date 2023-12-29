@@ -9,8 +9,8 @@ frontend:
   phases:
     preBuild:
       commands:
-        - nvm use 18
-        - npm install --force @img/sharp-linux-x64
+        - nvm install 18.17
+        - nvm use 18.17
         - npm ci
     build:
       commands:
