@@ -10,7 +10,7 @@ frontend:
     preBuild:
       commands:
         - nvm use 18
-        - npm ci
+        - npm ci --include=optional
     build:
       commands:
         - npm run build
