@@ -20,7 +20,7 @@ export const useBuilderContent = routeLoader$(async () => {
   return builderContent;
 });
 
-export const onStaticGenerate: StaticGenerateHandler = async ({ env }) => {
+export const onStaticGenerate: StaticGenerateHandler = async () => {
   const entries = await fetchEntries({
     model: BUILDER_MODEL,
     apiKey: import.meta.env.PUBLIC_BUILDER_API_KEY,
