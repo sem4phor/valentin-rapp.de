@@ -9,7 +9,7 @@ export const BUILDER_MODEL = "page";
 
 // Define a route loader function that loads 
 // content from Builder based on the URL.
-export const useBuilderContent = routeLoader$(async ({ url, error }) => {
+export const useBuilderContent = routeLoader$(async () => {
   // Fetch content for the specified model using the API key.
   const builderContent = await fetchOneEntry({
     model: BUILDER_MODEL,
