@@ -12,7 +12,7 @@ export default extendConfig(baseConfig, () => {
     },
     plugins: [
       staticAdapter({
-        origin: "http://localhost:5173",
+        origin: "https://dev.d2x7cgk2ajyzwh.amplifyapp.com",
       }),
     ],
   };
