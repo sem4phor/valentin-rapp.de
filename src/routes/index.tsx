@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
-import { routeLoader$ } from "@builder.io/qwik-city";
-import { fetchOneEntry, Content } from "@builder.io/sdk-qwik";
-import { CUSTOM_COMPONENTS } from "../../components/builder-registry";
+import { StaticGenerateHandler, routeLoader$ } from "@builder.io/qwik-city";
+import { fetchOneEntry, Content, fetchEntries } from "@builder.io/sdk-qwik";
+import { CUSTOM_COMPONENTS } from "~/components/builder-registry";
 
 // Define Builder's public API key and content model.
 export const BUILDER_PUBLIC_API_KEY = import.meta.env.PUBLIC_BUILDER_API_KEY;
@@ -20,6 +20,21 @@ export const useBuilderContent = routeLoader$(async () => {
   return builderContent;
 });
 
+export const onStaticGenerate: StaticGenerateHandler = async ({ env }) => {
+  const entries = await fetchEntries({
+    model: BUILDER_MODEL,
+    apiKey: import.meta.env.PUBLIC_BUILDER_API_KEY,
+  })
+  console.log('constonStaticGenerate:StaticGenerateHandler= ~ entries:', entries)
+  if (!entries) return {}
+  
+  return {
+    params: entries.results.map((e) => ({
+      id: e.id!
+    }))
+  }
+}
+
 // Define a component that renders Builder content 
 // using Qwik's Content component.
 export default component$(() => {
@@ -27,9 +42,10 @@ export default component$(() => {
   const content = useBuilderContent();
   // Specify the content model, pass the fetched content,
   // and provide the Public API Key
+
   return (
     <Content
-    customComponents={CUSTOM_COMPONENTS}
+      customComponents={CUSTOM_COMPONENTS}
       model={BUILDER_MODEL}         
       content={content.value} 
       apiKey={BUILDER_PUBLIC_API_KEY} 
