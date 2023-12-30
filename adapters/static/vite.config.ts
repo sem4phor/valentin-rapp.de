@@ -12,7 +12,7 @@ export default extendConfig(baseConfig, () => {
     },
     plugins: [
       staticAdapter({
-        origin: "https://valentin-rapp.de",
+        origin: "http://localhost:5173",
       }),
     ],
   };

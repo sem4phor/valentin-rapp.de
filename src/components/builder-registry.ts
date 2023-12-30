@@ -1,4 +1,4 @@
-import type { RegisteredComponent } from "@builder.io/sdk-qwik";
+import { type RegisteredComponent } from "@builder.io/sdk-qwik";
 import Counter from "./counter/counter";
 
 /**

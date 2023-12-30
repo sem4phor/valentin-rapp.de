@@ -85,3 +85,9 @@ Also, to integrate structured data, see [this guide](https://www.builder.io/c/do
 ```shell
 npm run build.server
 ```
+
+## Static Site Generator (Node.js)
+
+```shell
+npm run build.server
+```
