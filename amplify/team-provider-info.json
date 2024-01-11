@@ -10,6 +10,17 @@
       "StackName": "amplify-valentinrappde-dev-235642",
       "StackId": "arn:aws:cloudformation:eu-central-1:539784278122:stack/amplify-valentinrappde-dev-235642/8922a750-a69d-11ee-9a47-020582b80805",
       "AmplifyAppId": "d2x7cgk2ajyzwh"
+    },
+    "categories": {
+      "function": {
+        "triggerWebsiteBuild": {
+          "deploymentBucketName": "amplify-valentinrappde-dev-235642-deployment",
+          "s3Key": "amplify-builds/triggerWebsiteBuild-34572b36682b664c4431-build.zip"
+        }
+      },
+      "api": {
+        "triggerWebsiteBuildApi": {}
+      }
     }
   }
 }

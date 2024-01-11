@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/build-website": {
+      "name": "/build-website",
+      "lambdaFunction": "triggerWebsiteBuild",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

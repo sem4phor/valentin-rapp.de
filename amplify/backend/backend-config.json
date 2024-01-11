@@ -1,1 +1,43 @@
-{}
+{
+  "api": {
+    "triggerWebsiteBuildApi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "triggerWebsiteBuild"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "triggerWebsiteBuild": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_triggerWebsiteBuild_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "triggerWebsiteBuild"
+        }
+      ]
+    },
+    "AMPLIFY_function_triggerWebsiteBuild_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "triggerWebsiteBuild"
+        }
+      ]
+    }
+  }
+}
